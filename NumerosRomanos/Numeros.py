@@ -26,3 +26,10 @@ class NumerosRomanos():
     
     def calcular_numero_equivalente(self, numero):
         #Pensando en un algoritmo
+        if (numero + 1) in self.numeros_base:
+            unidad_romana = self.numeros_base[numero + 1]
+        
+        # num_bases_ordenados = sorted(self.numeros_base.keys())
+        
+        # unidad_anterior = self.numeros_base[]
+            
