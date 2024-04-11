@@ -15,5 +15,7 @@ class FB():
                 return 'Fizz'
             else: 
                 return number
+        else: 
+            raise ValueError('The input must be an integer')
                 
             
