@@ -9,7 +9,10 @@ class NumerosRomanos():
         if not isinstance(numeros_cardinales, list):
             numeros_cardinales = list(numeros_cardinales)
         numeros_romanos = []
-        for i in numeros_cardinales: 
+        for i in numeros_cardinales:
+            if i not in self.numeros_base:
+                numeros_romanos.append(self.calcular_numero_equivalente(i))
+        
             numeros_romanos.append(self.numeros_base[i])
         return numeros_romanos
     
@@ -20,3 +23,6 @@ class NumerosRomanos():
         for i in numeros_romanos: 
             numeros_cardinales.append(self.numeros_base[i])
         return numeros_cardinales
+    
+    def calcular_numero_equivalente(self, numero):
+        #Pensando en un algoritmo
