@@ -17,7 +17,12 @@ class FizzBuzzKata(unittest.TestCase):
         for i in test_numbers: 
             result = self.numbers.smart_printer(i)
             self.assertEqual('Buzz', result) 
-               
+    
+    def test_multiple_of_three_and_five(self):
+        test_numbers = [15, 30, 45, 60]
+        for i in test_numbers: 
+            result = self.numbers.smart_printer(i)
+            self.assertEqual('FizzBuzz', result)            
     
     
 if __name__ == '__main__':
