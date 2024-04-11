@@ -22,7 +22,13 @@ class FizzBuzzKata(unittest.TestCase):
         test_numbers = [15, 30, 45, 60]
         for i in test_numbers: 
             result = self.numbers.smart_printer(i)
-            self.assertEqual('FizzBuzz', result)            
+            self.assertEqual('FizzBuzz', result)      
+            
+    def test_regular_number(self):
+        test_numbers = [1, 2, 4, 7, 8, 11]
+        for i in test_numbers: 
+            result = self.numbers.smart_printer(i)
+            self.assertEqual(i, result)            
     
     
 if __name__ == '__main__':
