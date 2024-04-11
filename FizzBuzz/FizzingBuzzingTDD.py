@@ -33,6 +33,12 @@ class FizzBuzzKata(unittest.TestCase):
     def test_invalid_values(self):
         with self.assertRaises(ValueError):
             input_string = self.numbers.smart_printer('hello world')
+            
+    def test_negative_values(self):
+        test_N_numbers = [-1, -2, -4, -7, -8]
+        for i in test_N_numbers: 
+            result = self.numbers.smart_printer(i)
+            self.assertEqual(i, result)    
                             
     
     
